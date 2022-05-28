@@ -1,0 +1,2 @@
+# UFT
+Ukrainian Freedom Token
