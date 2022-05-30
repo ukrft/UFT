@@ -1,5 +1,6 @@
 # UFT
 Ukrainian Freedom Token
+
 🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦🇺🇦
 
 UFT is a fungible (ERC-20) token, a cryptocurrency, that supports Ukraine in its fight against the Russian aggression against Ukrainian people, their freedom, land and culture.
