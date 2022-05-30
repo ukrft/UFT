@@ -15,7 +15,9 @@ Core prinples:
 6. Proceeds withdrawal can be triggered by anyone, but only to pre-defined & vetted charities, volunteers and NGO wallets. 
 7. Coin can be interchangeable across other Ukraine-focused projects and coin holders should be able to receive benefits such as NFMT https://github.com/dappros/nfmt airdrops etc. 
 
+## Project team
 
+Igor Berezovsky & Smiles team https://www.smilesbitcoin.com/, Taras Filatov & Dappros team https://www.dappros.com/... (to be continued).
 
 
 
