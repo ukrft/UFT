@@ -7,11 +7,15 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract MyToken is ERC20, ERC20Burnable, Pausable, Ownable {
+    // cost for whole coin
     uint constant COST = 10000000000000000; // 0.01ETH
+    // max number of whole coins
     uint public maxCoinsSupply = 1000;
+    // current number of minted whole coins
     uint public totalCoinsSupply;
 
     constructor() ERC20("Coin MTK", "CMTK") {
+        // deployer get 500 hole coins
         _mint(msg.sender, 500 * 10 ** decimals());
         totalCoinsSupply = 500;
     }
@@ -24,10 +28,13 @@ contract MyToken is ERC20, ERC20Burnable, Pausable, Ownable {
         _unpause();
     }
 
+    // amount - whole coin unit
     function mint(address to, uint256 amount) public payable {
         require(msg.value >= (amount * COST), "");
         require(totalCoinsSupply + amount <= maxCoinsSupply, "");
-        _mint(to, 500 * 10 ** decimals());
+
+        // mint coins in wei unit
+        _mint(to, amount * 10 ** decimals());
         totalCoinsSupply += amount;
     }
 
